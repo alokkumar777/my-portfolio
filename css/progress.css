@@ -1,0 +1,106 @@
+:root {
+  --dark-midnight-blue: #06141b;
+  --charcoal-blue: #11212d;
+  --dark-green: #002e2c;
+  --midnight-green: #013436;
+  --dark-slate-gray: #253745;
+  --steel-blue: #4a5c6a;
+  --cadet-blue: #9ba8ab;
+  --light-gray: #ccd0cf;
+  --ghost-white: #f7f7ff;
+  --pistachio: #72b623;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f0f0f0;
+}
+
+.progress-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.progress-bar {
+  position: relative;
+  width: 150px;
+  height: 200px; /* Increased height to accommodate text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circular-progress {
+  --size: 150px;
+  --half-size: calc(var(--size) / 2);
+  --stroke-width: 10px; /* Thinner stroke width */
+  --radius: calc((var(--size) - var(--stroke-width)) / 2);
+  --circumference: calc(var(--radius) * pi * 2);
+  --dash: calc((var(--progress) * var(--circumference)) / 100);
+  animation: progress-animation 5s linear 0s 1 forwards;
+}
+
+.circular-progress circle {
+  cx: var(--half-size);
+  cy: var(--half-size);
+  r: var(--radius);
+  stroke-width: var(--stroke-width);
+  fill: none;
+  stroke-linecap: round;
+}
+
+.circular-progress circle.bg {
+  stroke: #ddd;
+}
+
+.circular-progress circle.fg {
+  transform: rotate(-90deg);
+  transform-origin: var(--half-size) var(--half-size);
+  stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
+  transition: stroke-dasharray 1s linear 0s;
+  stroke: #72b623;
+}
+
+.progress-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  /* font-weight: ; */
+  color: var(--dark-midnight-blue);
+}
+
+.progress-text {
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--dark-midnight-blue);
+}
+
+@property --progress {
+  syntax: "<1>";
+  inherits: false;
+  initial-value: 0;
+}
+
+@keyframes progress-animation {
+  from {
+    --progress: 0;
+  }
+  to {
+    --progress: var(--progress);
+  }
+}
+
+/* Responsivness */
+@media screen and (max-width: 768px) {
+  .progress-container {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(120px, 1fr)
+    ); /* Adjust grid for smaller screens */
+  }
+}

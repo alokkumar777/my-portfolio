@@ -1,0 +1,209 @@
+/* Styling the main section for 'Get in touch' */
+#get-in-touch {
+  display: flex; /* Using flexbox for layout */
+  flex-direction: column; /* Stacking elements vertically */
+  padding: 20px; /* Adding padding for spacing */
+  background-color: #f8f8f8; /* Setting background color */
+}
+
+/* Splitting contact information and contact form into separate sections */
+.contact-info,
+.contact-form {
+  flex: 1; /* Allowing each section to take up equal space */
+  padding: 20px 50px 20px 0px; /* Setting padding */
+}
+
+/* Styling for the contact information section */
+.contact-info {
+  margin-bottom: 20px; /* Adding margin at the bottom */
+}
+
+.contact-info h2 {
+  margin-top: 0; /* Resetting top margin */
+  text-transform: uppercase; /* Transforming text to uppercase */
+  font-size: 1.2rem; /* Setting font size */
+  font-weight: bold; /* Setting font weight */
+}
+
+.contact-info strong {
+  font-weight: 300; /* Setting font weight */
+  text-transform: uppercase; /* Transforming text to uppercase */
+  font-size: medium; /* Setting font size */
+}
+
+.contact-info p {
+  font-size: medium; /* Setting font size */
+}
+
+/* Styling for social media links */
+.social-media a {
+  margin-right: 10px; /* Adding margin to separate links */
+  text-decoration: none; /* Removing underline */
+  color: #253745; /* Setting text color */
+}
+
+/* Styling for the contact form */
+.contact-form form {
+  display: flex; /* Using flexbox for layout */
+  flex-direction: column; /* Stacking form elements vertically */
+}
+
+/* Styling for form groups */
+.form-group {
+  display: flex; /* Using flexbox for layout */
+  margin-bottom: 10px; /* Adding margin at the bottom */
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 1; /* Allowing input fields to take up remaining space */
+  padding: 10px; /* Adding padding for spacing */
+  margin-right: 10px; /* Adding margin on the right */
+  border: 1px solid #ccc; /* Setting border */
+  color: #253745; /* Setting text color */
+  border-radius: 16px; /* Adding border radius */
+  transition: border-color 0.2s ease-in-out; /* Adding transition property */
+}
+
+/* Styling for input and textarea on focus */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #72b623; /* Changing border color on focus */
+  outline: none; /* Removing default outline */
+}
+
+.form-group input:last-child,
+.form-group textarea {
+  margin-right: 0; /* Removing right margin for the last input */
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  opacity: 0.7; /* Setting placeholder opacity */
+}
+
+textarea {
+  height: 100px; /* Setting minimum height for textarea */
+  resize: vertical; /* Allowing vertical resizing */
+}
+
+/* Styling for the submit button */
+button {
+  font-family: inherit; /* Inheriting font family */
+  font-size: 20px; /* Setting font size */
+  background: #72b623; /* Setting background color */
+  color: white; /* Setting text color */
+  padding: 0.7em 1em; /* Setting padding */
+  display: inline-flex; /* Setting display to inline-flex */
+  align-items: center; /* Aligning items vertically */
+  border: none; /* Removing border */
+  overflow: hidden; /* Hiding overflow */
+  border-radius: 16px !important; /* Adding border radius */
+  transition: all 0.2s; /* Adding transition for smooth animation */
+  cursor: pointer; /* Changing cursor to pointer */
+  width: auto; /* Making button width automatic */
+  align-self: flex-start; /* Aligning button to the left */
+}
+
+/* Styling for elements within the button */
+button span {
+  display: block; /* Setting display to block */
+  margin-left: 0.3em; /* Adding margin on the left */
+  transition: all 0.3s ease-in-out; /* Adding transition for smooth animation */
+}
+
+button svg {
+  display: block; /* Setting display to block */
+  transform-origin: center center; /* Setting transform origin */
+  transition: transform 0.3s ease-in-out; /* Adding transition for smooth animation */
+}
+
+/* Hover effect for button */
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate; /* Applying animation */
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1); /* Applying transformation */
+}
+
+button:hover span {
+  transform: translateX(5em); /* Applying transformation */
+}
+
+button:active {
+  transform: scale(0.95); /* Applying transformation on active state */
+}
+
+/* Keyframes animation */
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em); /* Initial transformation */
+  }
+  to {
+    transform: translateY(-0.1em); /* Final transformation */
+  }
+}
+
+/* Styling for detail section */
+.detail {
+  display: flex; /* Using flexbox for layout */
+  align-items: flex-start; /* Aligning items vertically */
+  margin: 10px 0; /* Adding margin */
+}
+
+.detail i {
+  margin-right: 10px; /* Adding margin on the right */
+  font-size: 24px; /* Setting font size */
+  color: #72b623; /* Setting icon color */
+}
+
+.detail div {
+  display: flex; /* Using flexbox for layout */
+  flex-direction: column; /* Stacking elements vertically */
+}
+
+/* Additional styling for the heading section within 'Get in touch' */
+.get-in-touch .div-head-section-text {
+  text-align: center; /* Center-aligning text */
+  padding-bottom: 0; /* Resetting bottom padding */
+  margin-bottom: 1rem; /* Adding margin at the bottom */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  /* For screens larger than or equal to 768px */
+  #get-in-touch {
+    flex-direction: row; /* Changing flex direction */
+  }
+
+  .contact-info {
+    margin-bottom: 0; /* Removing bottom margin */
+  }
+}
+
+@media (max-width: 768px) {
+  /* For screens smaller than 768px */
+  .contact-info,
+  .contact-form {
+    padding: 20px; /* Adjusting padding for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  /* For screens smaller than 576px */
+  .form-group {
+    flex-direction: column; /* Stacking form elements vertically */
+  }
+
+  .form-group input,
+  .form-group textarea {
+    margin-right: 0; /* Removing right margin for inputs and textarea */
+    margin-bottom: 10px; /* Adding bottom margin for spacing */
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 10px; /* Further adjust padding for smaller screens */
+  }
+}

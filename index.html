@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alok Kumar - Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Alok Kumar, showcasing skills, projects, and contact information."
+    />
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/progress.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!-- Bootstrap CSS link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Font-awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font styling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Open Graph meta tags for better sharing -->
+    <meta property="og:title" content="Alok Kumar - Portfolio" />
+    <meta
+      property="og:description"
+      content="Portfolio of Your Name, showcasing skills, projects, and contact information."
+    />
+    <meta property="og:image" content="path_to_image.jpg" />
+    <meta property="og:url" content="http://yourportfolio.com" />
+    <meta property="og:type" content="website" />
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Your Name - Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Your Name, showcasing skills, projects, and contact information."
+    />
+    <meta name="twitter:image" content="path_to_image.jpg" />
+  </head>
+
+  <body>
+    <header class="container">
+      <!-- Navigation bar using Bootstrap classes -->
+      <nav class="navbar navbar-expand-lg sticky-top bg-light">
+        <div class="container-fluid">
+          <!-- Brand/logo link -->
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-terminal"></i>
+          </a>
+          <!-- Toggler/collapsible button for mobile view -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Collapsible part of the navbar -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Navbar links -->
+            <ul class="navbar-nav">
+              <!-- Each list item represents a link in the navbar -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#section1"
+                  >What I Do</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section2">Professional Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section3">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section4">About Me</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#section5" hidden>Testimonials</a>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#section6" hidden>Pricing</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#section7">Latest Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section8">Get In Touch</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Landing page -->
+      <div class="intro-container">
+        <div class="profile-img">
+          <img src="images/profile.jpg" alt="my picture" />
+        </div>
+        <div class="intro-text">
+          <h3 style="color: #72b623"><b>I'M ALOK KUMAR</b></h3>
+          <h3 style="color: #253745"><b>WEB DEVELOPER</b></h3>
+          <p class="intro-para">
+            "I'm a passionate frontend developer with a keen eye for design and
+            a focus on crafting user-friendly web experiences. I leverage my
+            skills in HTML, CSS, and JavaScript to bring websites and
+            applications to life, ensuring they are not only visually appealing
+            but also intuitive and interactive."
+          </p>
+          <br />
+          <a href="docs/Curriculum Vitae-2.pdf" download="Alok Kumar's CV.pdf"
+            >Download CV</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Sections -->
+    <main class="container">
+      <!-- Section-1 What I Do -->
+      <section class="what-i-do" id="section1">
+        <div class="div-head-section-text">
+          <span class="span-head-section-text"
+            >what <span style="color: #72b623">i do</span></span
+          >
+        </div>
+        <div class="card-section">
+          <div class="card">
+            <h4>Crafting User Interfaces (UI)</h4>
+            <h2 class="card-title">Building the Stage</h2>
+            <p>
+              I build the user interface (UI) that you see and interact with.
+              This means I design the layout, buttons, menus, images, and text
+              you see on a website or app.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Ensuring User Experience (UX)</h4>
+            <h2 class="card-title">Behind the Scenes</h2>
+            <p>
+              I also focus on making sure you have a positive user experience
+              (UX) by creating a smooth and intuitive flow. Navigation,
+              responsiveness (making sure the site works well on any device),
+              and overall usability are all part of my job.
+            </p>
+          </div>
+          <div class="card">
+            <h4>Building Interactivity</h4>
+            <h2 class="card-title">Bringing it to Life</h2>
+            <p>
+              On top of that, I bring websites to life with interactivity! Using
+              JavaScript, I create features like animations, forms, and even
+              entire web applications to make the experience more engaging for
+              you.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section-2 Professional Skill -->
+      <section class="professional-skill" id="section2">
+        <div class="div-head-section-text">
+          <span class="span-head-section-text"
+            >professional <span style="color: #72b623">skill</span></span
+          >
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" style="--progress: 45">
+            <svg
+              width="150"
+              height="150"
+              viewBox="0 0 150 150"
+              class="circular-progress"
+            >
+              <circle class="bg"></circle>
+              <circle class="fg"></circle>
+            </svg>
+            <div class="progress-number">45%</div>
+            <div class="progress-text">
+              HTML <i class="fa-brands fa-html5"></i>
+            </div>
+          </div>
+          <div class="progress-bar" style="--progress: 40">
+            <svg
+              width="150"
+              height="150"
+              viewBox="0 0 150 150"
+              class="circular-progress"
+            >
+              <circle class="bg"></circle>
+              <circle class="fg"></circle>
+            </svg>
+            <div class="progress-number">40%</div>
+            <div class="progress-text">
+              CSS <i class="fa-brands fa-css3-alt"></i>
+            </div>
+          </div>
+          <div class="progress-bar" style="--progress: 55">
+            <svg
+              width="150"
+              height="150"
+              viewBox="0 0 150 150"
+              class="circular-progress"
+            >
+              <circle class="bg"></circle>
+              <circle class="fg"></circle>
+            </svg>
+            <div class="progress-number">55%</div>
+            <div class="progress-text">
+              JavaScript <i class="fa-brands fa-js"></i>
+            </div>
+          </div>
+          <div class="progress-bar" style="--progress: 25">
+            <svg
+              width="150"
+              height="150"
+              viewBox="0 0 150 150"
+              class="circular-progress"
+            >
+              <circle class="bg"></circle>
+              <circle class="fg"></circle>
+            </svg>
+            <div class="progress-number">25%</div>
+            <div class="progress-text">
+              Git/Github <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+          <div class="progress-bar" style="--progress: 21">
+            <svg
+              width="150"
+              height="150"
+              viewBox="0 0 150 150"
+              class="circular-progress"
+            >
+              <circle class="bg"></circle>
+              <circle class="fg"></circle>
+            </svg>
+            <div class="progress-number">21%</div>
+            <div class="progress-text">
+              Angular <i class="fa-brands fa-angular"></i>
+            </div>
+          </div>
+          <div class="progress-bar" style="--progress: 30">
+            <svg
+              width="150"
+              height="150"
+              viewBox="0 0 150 150"
+              class="circular-progress"
+            >
+              <circle class="bg"></circle>
+              <circle class="fg"></circle>
+            </svg>
+            <div class="progress-number">30%</div>
+            <div class="progress-text">
+              Npm/Yarn <i class="fa-brands fa-npm"></i>
+            </div>
+          </div>
+          <div class="progress-bar" style="--progress: 60">
+            <svg
+              width="150"
+              height="150"
+              viewBox="0 0 150 150"
+              class="circular-progress"
+            >
+              <circle class="bg"></circle>
+              <circle class="fg"></circle>
+            </svg>
+            <div class="progress-number">60%</div>
+            <div class="progress-text">
+              React <i class="fa-brands fa-react"></i>
+            </div>
+          </div>
+          <div class="progress-bar" style="--progress: 35">
+            <svg
+              width="150"
+              height="150"
+              viewBox="0 0 150 150"
+              class="circular-progress"
+            >
+              <circle class="bg"></circle>
+              <circle class="fg"></circle>
+            </svg>
+            <div class="progress-number">35%</div>
+            <div class="progress-text">
+              NodeJS <i class="fa-brands fa-node-js"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section-3 Portfolio -->
+      <section class="portfolio" id="section3">
+        <div class="div-head-section-text">
+          <span class="span-head-section-text"
+            >port<span style="color: #72b623">folio</span></span
+          >
+        </div>
+        <div class="card-section">
+          <div class="card">
+            <div class="image-container">
+              <img src="images/form.jpg" alt="Form image" />
+            </div>
+            <h2 class="card-title">Web Form</h2>
+            <p>
+              This project likely deals with creating web forms that allow users
+              to input data. It could be used for various purposes like
+              collecting contact information, feedback, or registrations.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://github.com/AlokKumar1810/Form"
+                class="see-demo"
+                target="_blank"
+              >
+                On Github<span>➔</span>
+              </a>
+              <a
+                href="https://alokkumar1810.github.io/Form/"
+                class="see-demo"
+                target="_blank"
+              >
+                Live<span>➔</span>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+              <img src="images/todo.jpg" alt="To-do-list image" />
+            </div>
+            <h2 class="card-title">To do list</h2>
+            <p>
+              This project is a practical application that helps users manage
+              their tasks and stay organized. It could allow them to create
+              lists, prioritize items, and track their progress.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://github.com/alokkumar777/to-do-list"
+                class="see-demo"
+                target="_blank"
+              >
+                On Github<span>➔</span>
+              </a>
+              <a
+                href="https://alokkumar777.github.io/to-do-list/"
+                class="see-demo"
+                target="_blank"
+              >
+                Live<span>➔</span>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+              <img src="images/random color.jpg" alt="Random color image" />
+            </div>
+            <h2 class="card-title">Random Color Generator</h2>
+            <p>
+              This project is a fun and creative tool that generates random
+              colors. It could be used for inspiration in design projects,
+              choosing color schemes, or simply for entertainment.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://github.com/alokkumar777/random-color-generator"
+                class="see-demo"
+                target="_blank"
+              >
+                On Github<span>➔</span>
+              </a>
+              <a
+                href="https://alokkumar777.github.io/random-color-generator/"
+                class="see-demo"
+                hidden
+              >
+                Live<span>➔</span>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+              <img src="images/valentine.jpg" alt="Valentine image" />
+            </div>
+            <h2 class="card-title">Valentine Special</h2>
+            <p>
+              This project could be a fun and romantic application designed for
+              Valentine's Day. It might involve creating greetings, sharing love
+              messages, or playing love-themed games.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://github.com/alokkumar777/Valentines-special-"
+                class="see-demo"
+                target="_blank"
+              >
+                On Github<span>➔</span>
+              </a>
+              <a
+                href="https://alokkumar777.github.io/Valentines-special-/"
+                class="see-demo"
+                target="_blank"
+              >
+                Live<span>➔</span>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+              <img src="images/simon.jpg" alt="Simon game image" />
+            </div>
+            <h2 class="card-title">Simons Game</h2>
+            <p>
+              This project is likely based on the classic memory game Simon
+              Says. It might challenge users to remember and replicate sequences
+              of lights or sounds.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://github.com/alokkumar777/simon-game-project"
+                class="see-demo"
+                target="_blank"
+              >
+                On Github<span>➔</span>
+              </a>
+              <a
+                href="https://alokkumar777.github.io/simon-game-project/"
+                class="see-demo"
+                target="_blank"
+              >
+                Live<span>➔</span>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+              <img src="images/travel.jpg" alt="Travel image" />
+            </div>
+            <h2 class="card-title">TravelTrekker</h2>
+            <p>
+              This project sounds like a travel companion or itinerary planner.
+              It might help users organize their trips, research destinations,
+              or keep track of expenses.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://github.com/alokkumar777/TravelTrekker-"
+                class="see-demo"
+                target="_blank"
+              >
+                On Github<span>➔</span>
+              </a>
+              <a href="your-demo-link-url" class="see-demo" hidden>
+                Live<span>➔</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section-4 About me -->
+      <section class="about-me" id="section4">
+        <div class="div-head-section-text">
+          <span class="span-head-section-text"
+            >about <span style="color: #72b623">me</span></span
+          >
+        </div>
+        <div class="personal-info">
+          <div>
+            <h5>personal-info</h5>
+            <div><span>Bachelor's In</span> Computer Applications</div>
+            <div>
+              <span>Age:</span> <span id="age" data-birth-year="2004"></span>
+            </div>
+            <div><span>Nationality:</span> India</div>
+            <div><span>Freelancer:</span> Available</div>
+            <div><span>Address:</span> Haryana, India 🇮🇳</div>
+            <div>
+              <span>Phone:</span> +91 7496011739
+              <i class="fa-brands fa-square-whatsapp"></i>
+            </div>
+            <div><span>Email:</span> akdev.1106947@gmail.com</div>
+            <div><span>Skype:</span> alok.kumar</div>
+            <div><span>Language:</span> Hindi, English</div>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <h3>3<sup>+</sup></h3>
+              <p>year of experience</p>
+            </div>
+            <div class="card">
+              <h3>12<sup>+</sup></h3>
+              <p>completed projects</p>
+            </div>
+            <div class="card">
+              <h3>0</h3>
+              <p>customer</p>
+            </div>
+            <div class="card">
+              <h3>2<sup>+</sup></h3>
+              <p>awards won</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section-7 Latest Blog -->
+      <section class="latest-blog" id="section7">
+        <div class="div-head-section-text">
+          <span class="span-head-section-text"
+            >latest <span style="color: #72b623">blog</span></span
+          >
+        </div>
+        <div class="card-section">
+          <!-- card-blog-1 -->
+          <div class="card">
+            <p>May 01, 2024</p>
+            <h2 class="card-title">
+              Which Programming Language to Choose for AI?
+            </h2>
+            <p>
+              Discover the most popular programming languages for AI, including
+              Python for simplicity, C++ for performance, JavaScript for
+              full-stack capabilities, R for data analysis, and Java for
+              enterprise-level applications.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://shorturl.at/s7buh"
+                class="see-demo"
+                target="_blank"
+              >
+                Read more<span>➔</span>
+              </a>
+            </div>
+            <div class="image-container">
+              <img src="images/ai.jpg" alt="Form image" />
+            </div>
+          </div>
+          <!-- card-blog-2 -->
+          <div class="card">
+            <p>May 29, 2024</p>
+            <h2 class="card-title">
+              Open Source Essentials : Mastering Git, GitHub, Issues, and Best
+              Practices for Beginners
+            </h2>
+            <p>
+              This post provides a beginner's guide to open source, covering
+              topics like the benefits of open source, installing Git,
+              contributing to projects, best practices for contributors, and
+              common roles in repositories.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://shorturl.at/ioC6L"
+                class="see-demo"
+                target="_blank"
+              >
+                Read more<span>➔</span>
+              </a>
+            </div>
+            <div class="image-container">
+              <img src="images/opensource.jpg" alt="Form image" />
+            </div>
+          </div>
+          <!-- card-blog-3 -->
+          <div class="card">
+            <p>June 02, 2024</p>
+            <h2 class="card-title">
+              5 Cool Chrome DevTools Features Most Developers Don't Know About
+            </h2>
+            <p>
+              Discover 5 lesser-known features of Chrome DevTools that can
+              greatly boost development efficiency, including observing variable
+              values in real time, logging to the console without changing code,
+              setting conditional breakpoints and preserving console logs across
+              page reloads.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://shorturl.at/QjM8s"
+                class="see-demo"
+                target="_blank"
+              >
+                Read more<span>➔</span>
+              </a>
+            </div>
+            <div class="image-container">
+              <img src="images/5tool.webp" alt="Form image" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="container get-in-touch" id="section8">
+      <div class="div-head-section-text">
+        <span class="span-head-section-text"
+          >get in <span style="color: #72b623">touch</span></span
+        >
+      </div>
+      <div id="get-in-touch">
+        <div class="contact-info">
+          <h2>don't be shy !</h2>
+          <p>
+            Feel free to get in touch with me. I am always open to discussing
+            new projects, creative ideas or opportunities to be part of your
+            visions.
+          </p>
+
+          <div class="detail">
+            <i class="fa-solid fa-map"></i>
+            <div>
+              <strong>Address Point</strong>
+              <p>124507, Haryana, India</p>
+            </div>
+          </div>
+          <div class="detail">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>mail me</strong>
+              <p>akdev.1106947@gmail.com</p>
+            </div>
+          </div>
+          <div class="detail">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>call me</strong>
+              <p>+91 7988371539</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <a
+              href="https://www.facebook.com/profile.php?id=100070319165440&mibextid=ZbWKwL"
+              target="_blank"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="https://x.com/Alokumar1810" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/alok-kumar-8b47a4270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/alok_kumar_1810/" target="_blank"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="#" method="post">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button>
+              <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      fill="currentColor"
+                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <span>Send</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom script -->
+    <script src="/js/script.js"></script>
+    <!-- <script src="/js/toggle.js"></script> -->
+  </body>
+</html>
