@@ -20,23 +20,23 @@ body {
 
 .progress-container {
   display: grid;
-  gap: 10px;
+  gap: 0.625rem; /* 10px converted to rem */
   grid-template-columns: repeat(4, 1fr);
 }
 
 .progress-bar {
   position: relative;
-  width: 150px;
-  height: 200px; /* Increased height to accommodate text */
+  width: 9.375rem; /* 150px converted to rem */
+  height: 12.5rem; /* 200px converted to rem */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .circular-progress {
-  --size: 150px;
+  --size: 9.375rem; /* 150px converted to rem */
   --half-size: calc(var(--size) / 2);
-  --stroke-width: 10px; /* Thinner stroke width */
+  --stroke-width: 0.625rem; /* 10px converted to rem */
   --radius: calc((var(--size) - var(--stroke-width)) / 2);
   --circumference: calc(var(--radius) * pi * 2);
   --dash: calc((var(--progress) * var(--circumference)) / 100);
@@ -61,7 +61,7 @@ body {
   transform-origin: var(--half-size) var(--half-size);
   stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
   transition: stroke-dasharray 1s linear 0s;
-  stroke: #72b623;
+  stroke: var(--pistachio);
 }
 
 .progress-number {
@@ -69,14 +69,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
-  /* font-weight: ; */
+  font-size: 1.25rem; /* 20px converted to rem */
   color: var(--dark-midnight-blue);
 }
 
 .progress-text {
-  margin-top: 10px;
-  font-size: 16px;
+  margin-top: 0.625rem; /* 10px converted to rem */
+  font-size: 1rem; /* 16px converted to rem */
   color: var(--dark-midnight-blue);
 }
 
@@ -95,12 +94,12 @@ body {
   }
 }
 
-/* Responsivness */
+/* Responsiveness */
 @media screen and (max-width: 768px) {
   .progress-container {
     grid-template-columns: repeat(
       auto-fit,
-      minmax(120px, 1fr)
-    ); /* Adjust grid for smaller screens */
+      minmax(7.5rem, 1fr)
+    ); /* Adjust grid for smaller screens, 120px converted to rem */
   }
 }
