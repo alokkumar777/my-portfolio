@@ -178,6 +178,13 @@ button:active {
   margin-bottom: 1rem; /* Adding margin at the bottom */
 }
 
+.success-message {
+  display: none;
+  color: green;
+  margin-top: 10px;
+}
+
+
 /* Media queries for responsiveness */
 @media (min-width: 768px) {
   /* For screens larger than or equal to 768px */
