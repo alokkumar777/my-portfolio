@@ -78,6 +78,7 @@ body {
   color: #253745; /* Setting text color */
   border-radius: 1rem; /* 16px converted to rem */
   transition: border-color 0.2s ease-in-out; /* Adding transition property */
+  font-size: medium;
 }
 
 .form-group input:focus,
