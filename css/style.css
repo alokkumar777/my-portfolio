@@ -278,4 +278,12 @@ body {
   .card-section {
     grid-template-columns: 1fr;
   }
+} 
+
+@media (max-width: 576px) {
+  .nav-item {
+    margin-right: 0;
+    text-align: center;
+  }
+
 }
