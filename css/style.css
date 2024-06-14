@@ -117,9 +117,9 @@ body {
   animation: typing 2s steps(15), blink .6s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid;
+  border-right: 2px solid;
   /* font-family: monospace; */
-  /* font-size: 2em; */
+  font-size: 2em;
 }
 
 @keyframes typing {
