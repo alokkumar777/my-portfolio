@@ -81,14 +81,14 @@ body {
 }
 
 .profile-img img {
-  width: 15.625rem; /* 250px converted to rem */
+  width: 14.625rem; /* 250px converted to rem */
   border-radius: 1.25rem; /* 20px converted to rem */
   box-shadow: 0.1875rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.8); /* 3px 3px 12px converted to rem */
   transition: transform 0.2s ease-in-out; /* Adds smooth transition effect */
 }
 
 .profile-img img:hover {
-  transform: scale(1.1); /* Increase image size by 10% on hover */
+  transform: scale(1.01); /* Increase image size by 10% on hover */
 }
 
 .intro-text {
@@ -109,6 +109,29 @@ body {
 .intro-text a:hover {
   background-color: var(--pistachio);
   color: var(--ghost-white);
+}
+/* typing aninmation */
+
+.typing-demo {
+  width: 15ch;
+  animation: typing 2s steps(15), blink .6s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  /* font-family: monospace; */
+  /* font-size: 2em; */
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 
 /* Heading Section Div */
