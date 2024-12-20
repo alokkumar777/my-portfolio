@@ -102,49 +102,79 @@ textarea {
   resize: vertical; /* Allowing vertical resizing */
 }
 
-button {
-  font-family: inherit; /* Inheriting font family */
-  font-size: 1.25rem; /* 20px converted to rem */
-  background: #72b623; /* Setting background color */
-  color: white; /* Setting text color */
-  padding: 0.7em 1em; /* Setting padding */
-  display: inline-flex; /* Setting display to inline-flex */
-  align-items: center; /* Aligning items vertically */
-  border: none; /* Removing border */
-  overflow: hidden; /* Hiding overflow */
-  border-radius: 1rem !important; /* 16px converted to rem */
-  transition: all 0.2s; /* Adding transition for smooth animation */
-  cursor: pointer; /* Changing cursor to pointer */
-  width: auto; /* Making button width automatic */
-  align-self: flex-start; /* Aligning button to the left */
+/* From Uiverse.io by wang3616359git */
+.bt {
+  border: none;
+  user-select: none;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  background-color: #71b623;
+  box-shadow: #cacaca 0.125rem 0.125rem 0.625rem 0.0625rem;
+  border-radius: 0.75rem;
+  height: 3.25rem;
+  line-height: 3.25rem;
+  width: 7.5rem;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
-button span {
-  display: block; /* Setting display to block */
-  margin-left: 0.3em; /* Adding margin on the left */
-  transition: all 0.3s ease-in-out; /* Adding transition for smooth animation */
+.msg {
+  height: 0;
+  width: 0;
+  border-radius: 0.125rem;
+  position: absolute;
+  left: 15%;
+  top: 25%;
 }
 
-button svg {
-  display: block; /* Setting display to block */
-  transform-origin: center center; /* Setting transform origin */
-  transition: transform 0.3s ease-in-out; /* Adding transition for smooth animation */
+.bt:active {
+  transition: all 0.001s ease;
+  background-color: #71b623a0;
+  box-shadow: #97989a 0 0 0 0;
+  transform: translateX(0.0625rem) translateY(0.0625rem);
 }
 
-button:hover .svg-wrapper {
-  animation: fly-1 0.6s ease-in-out infinite alternate; /* Applying animation */
+.msg.animate {
+  animation: msgRun 2s forwards;
 }
 
-button:hover svg {
-  transform: translateX(1.2em) rotate(45deg) scale(1.1); /* Applying transformation */
-}
+@keyframes msgRun {
+  0% {
+    border-top: #d6d6d9 0 solid;
+    border-bottom: #f2f2f5 0 solid;
+    border-left: #f2f2f5 0 solid;
+    border-right: #f2f2f5 0 solid;
+  }
 
-button:hover span {
-  transform: translateX(5em); /* Applying transformation */
-}
+  20% {
+    border-top: #d6d6d9 0.875rem solid;
+    border-bottom: #f2f2f5 0.875rem solid;
+    border-left: #f2f2f5 1.25rem solid;
+    border-right: #f2f2f5 1.25rem solid;
+  }
 
-button:active {
-  transform: scale(0.95); /* Applying transformation on active state */
+  25% {
+    border-top: #d6d6d9 0.75rem solid;
+    border-bottom: #f2f2f5 0.75rem solid;
+    border-left: #f2f2f5 1.125rem solid;
+    border-right: #f2f2f5 1.125rem solid;
+  }
+
+  80% {
+    border-top: transparent 0.75rem solid;
+    border-bottom: transparent 0.75rem solid;
+    border-left: transparent 1.125rem solid;
+    border-right: transparent 1.125rem solid;
+  }
+
+  100% {
+    transform: translateX(9.375rem);
+    border-top: transparent 0.75rem solid;
+    border-bottom: transparent 0.75rem solid;
+    border-left: transparent 1.125rem solid;
+    border-right: transparent 1.125rem solid;
+  }
 }
 
 @keyframes fly-1 {
@@ -184,7 +214,6 @@ button:active {
   color: green;
   margin-top: 10px;
 }
-
 
 /* Media queries for responsiveness */
 @media (min-width: 768px) {
