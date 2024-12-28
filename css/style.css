@@ -81,15 +81,17 @@ body {
 }
 
 .profile-img img {
-  width: 14.625rem; /* 250px converted to rem */
-  border-radius: 1.25rem; /* 20px converted to rem */
-  box-shadow: 0.1875rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.8); /* 3px 3px 12px converted to rem */
-  transition: transform 0.2s ease-in-out; /* Adds smooth transition effect */
+  width: 13.625rem; /* 250px converted to rem */
+  border-radius: 0.50rem;
+  /* box-shadow: 0.1875rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.8); */
+  /* transition: transform 0.2s ease-in-out;  */
+  margin-top: 3rem;
 }
 
-.profile-img img:hover {
-  transform: scale(1.01); /* Increase image size by 10% on hover */
-}
+/* .profile-img img:hover {
+  transform: scale(1.01); 
+} */
+
 
 .intro-text {
   max-width: 37.5rem; /* 600px converted to rem */
